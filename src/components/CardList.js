@@ -1,41 +1,41 @@
 import React from 'react'
 import Card from "./Card"
 import "../stylesheets/card.scss";
+import dataCards from "../data/dataCards.json";
 
-function CardList() {
+function handleSuffle() {
+  const cards = dataCards;  
+  let i, j, temp;
+    for (i = cards.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        temp = cards[i];
+        cards[i] = cards[j];
+        cards[j] = temp;
+    }
+    // props.cards(cards);
+    return cards;   
+}
+
+function CardList(props) {
   return (
-    <div className="game-board">
-      < Card
-        style="card__yellow"
-        title="Formación"
-        icon="Icono de formación"
-      />
-      < Card
-        style="card__purple"
-        title="Experiencia"
-        icon="Icono de experiencia"
-      />
-      < Card
-        style="card__aquamarina"
-        title="Idiomas"
-        icon="Icono de idiomas"
-      />
-      < Card
-        style="card__red"
-        title="Proyectos"
-        icon="Icono de proyectos"
-      />
-      < Card
-        style="card__green"
-        title="Soft Skills"
-        icon="Icono de Soft Skills"
-      />
-      < Card
-        style="card__pink"
-        title="B O N U S"
-        icon="Icono de estrella"
-      />
-    </div>
+    <React.Fragment>
+      <button onClick={handleSuffle} className="header__button">¡A mezclar!</button>
+      <div className="game-board">
+        {props.cards.map((card, key) => {
+          return (
+            <Card
+              key={key}
+              name={card.name}
+              icon={card.icon}
+              class={card.class}
+            />
+            )
+          })
+        }
+      </div>
+    </React.Fragment>
+    
+   
   )
 }
 

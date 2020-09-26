@@ -1,0 +1,32 @@
+[
+    {
+       "name": "Formación",
+       "icon": "Icono de formación",
+       "class": "card__yellow"  
+    },
+    {
+        "name": "Experiencia",
+        "icon": "Icono de experiencia",
+        "class": "card__purple"  
+     },
+     {
+        "name": "Idiomas",
+        "icon": "Icono de idiomas",
+        "class": "card__aquamarina"  
+     },
+     {
+        "name": "Proyectos",
+        "icon": "Icono de proyectos",
+        "class": "card__red"  
+     },
+     {
+        "name": "Soft Skills",
+        "icon": "Icono de soft skills",
+        "class": "card__green"  
+     },
+     {
+        "name": "B O N U S",
+        "icon": "Icono de bonus",
+        "class": "card__pink"  
+     }
+]

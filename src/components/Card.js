@@ -5,15 +5,12 @@ import '../stylesheets/card.scss';
 function Card(props) {
   return (
     <React.Fragment>
-      <div className={`card ${props.style}`}>
+      <div className={`card ${props.class}`}>
         <p className="card__title">
-          {props.title}
+          {props.name}
         </p>
         <p className="card__icon">{props.icon}</p>
-
       </div>
-
-
     </React.Fragment>
   )
 }

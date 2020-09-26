@@ -1,5 +1,5 @@
-import React from 'react'
-import "../stylesheets/header.scss"
+import React from 'react';
+import "../stylesheets/header.scss";
 
 function Header() {
   return (
@@ -16,7 +16,6 @@ function Header() {
       <p className="header__text">
         Solo cuando hayas volteado todas y me conozcas todo mejor, podrás desbloquear la carta de BONUS. ¿Juegas?
       </p>
-      <button className="header__button">¡A mezclar!</button>
     </header>
   )
 }
