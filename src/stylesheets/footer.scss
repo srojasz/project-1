@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+
+  &__text {
+    border-top: 2px solid #007ec1;
+    padding: 2rem 4rem;
+    max-width: 70rem;
+    text-align: center;
+  }
+
+  &__button {
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #007ec1;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-size: 1rem;
+  }
+}

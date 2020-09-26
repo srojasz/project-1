@@ -1,0 +1,28 @@
+[
+    {
+        "date": "2019-2020",
+        "title": "Front-end Development",
+        "company": "Adalab",
+        "learning": ["HTML5", "CSS3", "JavaScript", "React", "SASS", "Gulp", "Git", "Scrum"]
+      },
+      {
+        "date": "2019-2019",
+        "title": "HTML y CSS",
+        "company": "CodeAcademy",
+        "learning": ["HTML5", "CSS3"]
+      },
+      {
+        "date": "2013-2013",
+        "title": "Posicionamiento en buscadores",
+        "company": "Comunidad de Madrid",
+        "learning": ["SEO", "Google Trend"]
+      },
+      {
+        "date": "2005-2010",
+        "title": "Periodismo y Comunicación Audiovisual",
+        "company": "Universidad Carlos III de Madrid",
+        "learning": ["Periodismo", "Comunicación Audiovisual", "Photoshop", "Indesign", "QuarkXP"]
+      }
+
+
+]

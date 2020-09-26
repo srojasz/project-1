@@ -1,0 +1,50 @@
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  min-width: 10rem;
+  height: 15rem;
+  border-radius: 10px;
+  margin: 0.7rem;
+
+  &__title {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  &__icon {
+    color: white;
+    text-align: center;
+  }
+
+  &__yellow {
+    background-color: darkorange;
+  }
+  &__purple {
+    background-color: purple;
+  }
+  &__red {
+    background-color: darkred;
+  }
+  &__green {
+    background-color: darkseagreen;
+  }
+  &__aquamarina {
+    background-color: aquamarine;
+  }
+  &__pink {
+    background-color: pink;
+  }
+}
