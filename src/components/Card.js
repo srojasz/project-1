@@ -10,7 +10,10 @@ function Card(props) {
           {props.name}
         </p>
         <p className="card__icon">{props.icon}</p>
+
       </div>
+
+
     </React.Fragment>
   )
 }
