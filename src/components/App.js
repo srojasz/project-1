@@ -10,12 +10,13 @@ import dataCards from "../data/dataCards.json";
 // Cuando alguien pinche en a mezclar subo por lifting el nuevo orden de las cartas y se lo paso por props a CardList.
 
 function App() {
-  const [cards, setCards] = useState(dataCards);
+  // const [cards, setCards] = useState(dataCards);
 
   return (
     <div className="app-container">
       <Header />
-      <CardList cards={cards}/>
+      <CardList />
+
       <JobsList />
       <Footer />
     </div>
