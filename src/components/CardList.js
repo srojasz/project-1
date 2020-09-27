@@ -17,16 +17,13 @@ function CardList() {
           cards[i] = cards[j];
           cards[j] = temp;
       }
-      setCards(cards);
-      console.log(cards, 'cards');
-      return cards;   
+      const nextState = [...cards];
+      setCards(nextState);
   }
 
   return (
       <div className="game-area">
-        <button onClick={() => setCount(count + 1)}> {count} Click me </button>
-
-        <button onClick={() => handleSuffle()} className="header__button">¡A mezclar!</button>
+        <button onClick={handleSuffle} className="header__button">¡A mezclar!</button>
         <div className="game-board">
           {cards.map((card, key) => {
             return (
@@ -40,10 +37,7 @@ function CardList() {
             })
           }
         </div>
-       </div>
-
-    
-   
+       </div>   
   )
 }
 
