@@ -5,10 +5,8 @@ import dataCards from "../data/dataCards.json";
 
 
 function CardList() {
-  
   const [cards, setCards] = useState(dataCards);
-  const [count, setCount] = useState(0);
-
+  
   function handleSuffle() {  
     let i, j, temp;
       for (i = cards.length - 1; i > 0; i--) {
@@ -17,8 +15,8 @@ function CardList() {
           cards[i] = cards[j];
           cards[j] = temp;
       }
-      const nextState = [...cards];
-      setCards(nextState);
+      const shuffleCards = [...cards];
+      setCards(shuffleCards);
   }
 
   return (

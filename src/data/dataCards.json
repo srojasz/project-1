@@ -6,7 +6,7 @@
     },
     {
         "name": "Experiencia",
-        "icon": "Icono de experiencia",
+        "icon": "fas fa-briefcase",
         "class": "card__purple"  
      },
      {

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../stylesheets/card.scss';
+import 'font-awesome/css/font-awesome.min.css';
 
 
 function Card(props) {
@@ -9,7 +10,7 @@ function Card(props) {
         <p className="card__title">
           {props.name}
         </p>
-        <p className="card__icon">{props.icon}</p>
+        <i className={`card__icon ${props.icon}`}></i>
 
       </div>
 
