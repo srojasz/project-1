@@ -3,7 +3,6 @@ import Card from "./Card";
 import "../stylesheets/card.scss";
 import dataCards from "../data/dataCards.json";
 
-
 function CardList() {
   const [cards, setCards] = useState(dataCards);
   

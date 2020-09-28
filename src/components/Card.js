@@ -1,6 +1,6 @@
 import React from 'react'
 import '../stylesheets/card.scss';
-import 'font-awesome/css/font-awesome.min.css';
+import { Route, Switch } from 'react-router-dom';
 
 
 function Card(props) {
@@ -11,7 +11,6 @@ function Card(props) {
           {props.name}
         </p>
         <i className={`card__icon ${props.icon}`}></i>
-
       </div>
 
 
