@@ -35,8 +35,6 @@ Como Front-end developer junior, necesito llamar la atención de los reclutadore
 
 Por eso, y porque quiero huir de los CV estandarizados, he decidido crear **My game vitae!**, un sencillo juego de cartas con el que los reclutadores pueden conocerme mejor de una forma interactiva y divertida.
 
-![preview of project](./images/my-react-game.png)
-
 \*\*\* Puedes ver el prototipo interactivo de este proyecto en versión móvil aquí: https://marvelapp.com/dd8j8bb/screen/65584136
 
 En este sentido, me gustaría tener una página web responsive dividida horizontalmente en dos apartados. La zona superior debera contener:
