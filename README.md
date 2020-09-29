@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _My game vitae!_
 
-## Available Scripts
+Los CVs no tienen por qué ser aburridos, pero seamos sinceros... ¡tienden a serlo! Por eso, me ha parecido interesante gamificar el mío y, de paso, poner en práctica los conocimientos sobre JavaScript y React que he aprendido en el bootcamp de Adalab. O mejor aún... ¡ampliarlos usando una librería como Redux!
 
-In the project directory, you can run:
+En una primera fase del proyecto, crearé esta SPA con mis datos. Después, la idea es crear una SPA abierta a los usuarios, en los que ellos puedan añadir sus propios datos y crear su propio *My game Vitae!*
 
-### `npm start`
+Si tienes sugerencias para mejorar el proyecto, ¡ponte en contacto conmigo! ¡Serán bienvenidas!
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Objetivos personales
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Con este proyecto me gustaría:
 
-### `npm test`
+1. Afianzar y mejorar mis conocimientos sobre **React JS**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Dominar el estado de los componentes
+- Aprender sobre **_Redux_**
+- Aprender sobre los **_Hooks_**
 
-### `npm run build`
+2. Afianzar y ampliar mis conocimientos sobre **JavaScript**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Manejar arrays y objetos
+- Generar una interfaz dinámica
+- Aprender a barajar y voltear cartas
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+3. Afianzar y ampliar mis conocimientos sobre **HTML y CSS**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Maquetar desde cero con Sass
+- Utilizar BEM
+- Introducir alguna animación molona con CSS
+- ¡Ojo con la semántica!
 
-### `npm run eject`
+## Objetivos del proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Como Front-end developer junior, necesito llamar la atención de los reclutadores con un CV que, por un lado, resulte atractivo y, por otro, demuestre **mis conocimientos sobre las disciplinas aprendidas en el bootcamp de Adalab: CSS, HTML, JavaScript y React, así como mi capacidad para aprender cosas nuevas como Redux**.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Por eso, y porque quiero huir de los CV estandarizados, he decidido crear **My game vitae!**, un sencillo juego de cartas con el que los reclutadores pueden conocerme mejor de una forma interactiva y divertida.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![preview of project](./images/my-react-game.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+\*\*\* Puedes ver el prototipo interactivo de este proyecto en versión móvil aquí: https://marvelapp.com/dd8j8bb/screen/65584136
 
-## Learn More
+En este sentido, me gustaría tener una página web responsive dividida horizontalmente en dos apartados. La zona superior debera contener:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **5 cartas de colores** que, al clicar sobre ellas, se den la vuelta con información sobre los 5 apartados en los que se divide mi currículum: Formación, Experiencia Profesional, Soft Skills, Idiomas y Proyectos.
+- **1 carta BONUS** que permanece inactiva hasta que se hayan volteado las cinco restantes y que contiene información extra sobre mis aficiones, mis proyectos previos a Adalab, contenido multimedia, etc.
+- Un **botón para barajar** las cartas y cambiarlas de orden aleatoriamente.
+- Un **botón para reclutadores que no tengan tiempo para jugar** pero que, sin embargo, quieran conocer mi perfil. Al pulsar sobre él, el CV se pintará 'del tirón' en la parte inferior de la página.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Por otra parte, en el apartado inferior de la página web se iría pintando la información detallada que en la carta se muestra de manera esquemática. Contaría con:
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- 5 apartados, uno por cada carta volteada.
+- Una **side-bar** donde irá apareciendo la información del BONUS cuando esta carta pueda ser volteada. Desde este apartado se podrá acceder a otra página
+- Un **botón para descargar el CV** en PDF.
