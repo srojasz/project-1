@@ -2,31 +2,31 @@
     {
        "name": "Formación",
        "icon": "Icono de formación",
-       "class": "card__yellow"  
+       "class": "education"  
     },
     {
         "name": "Experiencia",
         "icon": "fa-briefcase",
-        "class": "card__purple"  
+        "class": "experience"  
      },
      {
         "name": "Idiomas",
         "icon": "Icono de idiomas",
-        "class": "card__aquamarina"  
+        "class": "languages"  
      },
      {
         "name": "Proyectos",
         "icon": "Icono de proyectos",
-        "class": "card__red"  
+        "class": "projects"  
      },
      {
         "name": "Soft Skills",
         "icon": "Icono de soft skills",
-        "class": "card__green"  
+        "class": "skills"  
      },
      {
         "name": "B O N U S",
         "icon": "Icono de bonus",
-        "class": "card__pink"  
+        "class": "bonus"  
      }
 ]

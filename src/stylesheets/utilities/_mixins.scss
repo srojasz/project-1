@@ -1,0 +1,94 @@
+$font-unit: "px";
+
+@mixin font($size, $line: normal, $spacing: 0, $unit: $font-unit) {
+	font-size: $size#{$unit};
+
+	@if $line != normal {
+		line-height: $line#{$unit};
+	}
+
+	@if $spacing != 0 {
+		letter-spacing: $spacing#{$unit};
+	}
+}
+
+@mixin flex($dir: row, $jus: start, $ali: start, $wrap: initial, $grow: initial) {
+	display: flex;
+
+	@if $dir != "" {
+		flex-direction: $dir;
+	}
+
+	@if $jus != start {
+		justify-content: $jus;
+	}
+
+	@if $ali != start {
+		align-items: $ali;
+	}
+
+	@if $wrap != initial {
+		flex-wrap: $wrap;
+	}
+
+	@if $grow != initial {
+		flex-grow: $grow;
+	}
+}
+
+//----------------------------------------//
+//                 LAYOUT                 //
+//----------------------------------------//
+
+$max-content-width: 1200px;
+$tablet-width: 767px;
+$desktop-width: 1023px;
+$desktop-hd-width: 1400px;
+
+@mixin from($size) {
+	@media (min-width: #{$size}) {
+		@content;
+	}
+}
+
+@mixin to-tablet {
+	@media (max-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin from-tablet {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin to-desktop {
+	@media (max-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin from-desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) and (max-width: #{$desktop-hd-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin to-desktop-hd {
+	@media (max-width: #{$desktop-hd-width}) {
+		@content;
+	}
+}
+
+@mixin from-desktop-hd {
+	@media (min-width: #{$desktop-hd-width}) {
+		@content;
+	}
+}

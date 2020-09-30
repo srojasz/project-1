@@ -1,36 +1,109 @@
+@import "../stylesheets/utilities/mixins.scss";
+@import "../stylesheets/utilities/variables.scss";
+
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex($dir: column, $ali: center, $jus: center);
+
+  &__toggle {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px;
+
+    &--container {
+      align-self: flex-end;
+      margin: 1rem 1rem 0 0;
+
+      label {
+        margin-right: 1rem;
+      }
+
+      span {
+        @include font(15);
+        color: lightgray;
+
+        &.active {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    &--btn {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--color-locked);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 20px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--color-white);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+    input:checked + .header__toggle--btn {
+      background-color: var(--color-primary);
+    }
+
+    input:focus + .header__toggle--btn {
+      box-shadow: 0 0 1px var(--color-primary);
+    }
+
+    input:checked + .header__toggle--btn:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(29px);
+    }
+  }
 
   &__title {
-    font-family: "Bangers", cursive;
-    font-size: 2rem;
-    margin: 0;
+    font-family: var(--font-secondary);
+    @include font(50);
+    margin: 1.2rem;
   }
   &__subtitle {
-    color: #007ec1;
+    color: var(--color-primary);
     padding: 1rem;
-    font-style: italic;
-    border-top: 2px solid #007ec1;
-    border-bottom: 2px solid #007ec1;
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    margin-bottom: 2.2rem;
+    font-family: var(--font-secondary);
   }
 
   &__text {
     text-align: center;
     max-width: 70rem;
+    font-family: var(--font-primary);
+    @include font(18);
   }
   &__button {
-    margin: 1rem;
-    border: none;
+    margin: 2rem 1rem;
+    border: 0;
     border-radius: 10px;
     width: 10rem;
     height: 2.5rem;
-    background-color: #007ec1;
+    background-color: var(--color-primary);
+    color: var(--color-white);
     text-align: center;
-    color: white;
-    font-size: 1rem;
+    @include font(20);
     cursor: pointer;
   }
 }

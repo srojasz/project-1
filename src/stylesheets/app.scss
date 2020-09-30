@@ -1,6 +1,14 @@
 @import '../stylesheets/utilities/mixins.scss';
+@import '../stylesheets/utilities/typography.scss';
+
+//RESET
+
+* {
+  font-family: var(--font-primary);
+  @include font(20);
+}
 
 .app-container {
-  margin: 1rem 1.2rem;
-  font-family: "Ubuntu", sans-serif;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
 }

@@ -1,0 +1,33 @@
+:root {
+  //----------------------------------------//
+  //                COLORS                  //
+  //----------------------------------------//
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #007ec1;
+  --color-education: #e57b7a;
+  --color-experience: #24a19c;
+  --color-languages: #ff5733;
+  --color-skills: #851f57;
+  --color-projects: #6eca2f;
+  --color-bonus: #e57b7a;
+  --color-locked: #ecf4f3;
+
+  //----------------------------------------//
+  //               TYPOGRAPHY               //
+  //----------------------------------------//
+
+  --font-secondary: "Bangers", cursive;
+  --font-primary: "Neucha", cursive;
+
+  //----------------------------------------//
+  //                LAYOUT                  //
+  //----------------------------------------//
+  --max-content-width: 900px;
+  --padding-body: 25px;
+
+  @include from-tablet() {
+    --padding-body: 55px;
+  }
+}

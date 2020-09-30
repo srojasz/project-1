@@ -1,0 +1,14 @@
+%font-primary {
+	font-family: var(--font-primary);
+	font-weight: var(--font-primary-regular-weight);
+}
+
+%font-primary-semibold {
+	font-family: var(--font-primary--medium);
+	font-weight: var(--font-primary-semibold-weight);
+}
+
+%font-primary-bold {
+	font-family: var(--font-primary--bold);
+	font-weight: var(--font-primary-bold-weight);
+}

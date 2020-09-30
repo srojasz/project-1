@@ -19,7 +19,7 @@ function CardList() {
   }
 
   return (
-      <div className="game-area">
+      <div className="game">
         <button onClick={handleSuffle} className="header__button">¡A mezclar!</button>
         <div className="game-board">
           {cards.map((card, key) => {
