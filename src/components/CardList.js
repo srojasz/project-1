@@ -26,7 +26,13 @@ function CardList() {
       <div className="game-board">
         {cards.map((card, key) => {
           return (
-            <Card key={key} id={card.id} icon={card.icon} card={card.class} />
+            <Card
+              key={key}
+              id={card.id}
+              icon={card.icon}
+              card={card.class}
+              name={card.name}
+            />
           );
         })}
       </div>
