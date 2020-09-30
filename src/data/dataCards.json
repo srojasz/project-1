@@ -3,36 +3,42 @@
     "id": 1,
     "name": "Formación",
     "icon": "Icono de formación",
-    "class": "education"
+    "css": "education",
+    "isOpen": false
   },
   {
     "id": 2,
     "name": "Experiencia",
     "icon": "fa-briefcase",
-    "class": "experience"
+    "css": "experience",
+    "isOpen": false
   },
   {
     "id": 3,
     "name": "Idiomas",
     "icon": "Icono de idiomas",
-    "class": "languages"
+    "css": "languages",
+    "isOpen": false
   },
   {
     "id": 4,
     "name": "Proyectos",
     "icon": "Icono de proyectos",
-    "class": "projects"
+    "css": "projects",
+    "isOpen": false
   },
   {
     "id": 5,
     "name": "Soft Skills",
     "icon": "Icono de soft skills",
-    "class": "skills"
+    "css": "skills",
+    "isOpen": false
   },
   {
     "id": 6,
     "name": "B O N U S",
     "icon": "Icono de bonus",
-    "class": "bonus"
+    "css": "bonus",
+    "isOpen": false
   }
 ]

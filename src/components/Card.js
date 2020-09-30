@@ -1,30 +1,17 @@
 import React from "react";
 import "../stylesheets/card.scss";
-import { Link, Route, Switch } from "react-router-dom";
 
 function Card(props) {
-  const { id, card, icon, name } = props;
-  const route = `/card/${id}`;
+  const { id, card, icon, isOpen, onClick } = props;
 
-  function handleCard(ev) {
-    const cardSelectedId = ev.target.id;
-  }
+  let name = isOpen ? props.name : "";
 
-  function renderOpenCard(ev) {
-    console.log("hola, muéstrame el detalle");
-  }
   return (
     <React.Fragment>
-      <Link to={route}>
-        <div
-          onClick={handleCard}
-          id={id}
-          className={`game-board__card ${card}`}
-        >
-          <i className={`game-board__card--icon ${icon}`}></i>
-        </div>
-      </Link>
-      <Route path="/card/:id" render={renderOpenCard} />
+      <div onClick={onClick} id={id} className={`game-board__card ${card}`}>
+        <h3 className="game-board__card--title">{name}</h3>
+        <i className={`game-board__card--icon ${icon}`}></i>
+      </div>
     </React.Fragment>
   );
 }

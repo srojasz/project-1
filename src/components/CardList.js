@@ -6,7 +6,7 @@ import dataCards from "../data/dataCards.json";
 function CardList() {
   const [cards, setCards] = useState(dataCards);
 
-  function handleSuffle() {
+  const handleSuffle = () => {
     let i, j, temp;
     for (i = cards.length - 1; i > 0; i--) {
       j = Math.floor(Math.random() * (i + 1));
@@ -16,7 +16,16 @@ function CardList() {
     }
     const shuffleCards = [...cards];
     setCards(shuffleCards);
-  }
+  };
+
+  const onClick = (index) => (e) => {
+    const card = cards[index];
+    cards[index] = {
+      ...card,
+      isOpen: !card.isOpen,
+    };
+    setCards([...cards]);
+  };
 
   return (
     <div className="game">
@@ -30,8 +39,10 @@ function CardList() {
               key={key}
               id={card.id}
               icon={card.icon}
-              card={card.class}
+              card={card.css}
               name={card.name}
+              isOpen={card.isOpen}
+              onClick={onClick(key)}
             />
           );
         })}
