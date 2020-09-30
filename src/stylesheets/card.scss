@@ -16,6 +16,11 @@
       margin: 1rem;
       cursor: pointer;
       box-shadow: 7px 7px 8px 5px grey;
+      opacity: 0.9;
+
+      &.card-up {
+        opacity: 1;
+      }
 
       &--title {
         @include font(28);
