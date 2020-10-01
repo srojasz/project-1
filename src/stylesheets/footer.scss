@@ -1,27 +1,36 @@
+@import "../stylesheets/utilities/mixins.scss";
+@import "../stylesheets/utilities/variables.scss";
+
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
+  @include flex($dir: column, $ali: center, $jus: center);
+  padding-top: 2.5rem;
 
-  &__text {
-    border-top: 2px solid #007ec1;
-    padding: 2rem 4rem;
-    max-width: 70rem;
-    text-align: center;
-  }
+  &__info {
+    @include flex($dir: column, $ali: center, $jus: center);
+    margin-bottom: 1rem;
 
-  &__button {
-    margin: 1rem;
-    border: none;
-    border-radius: 10px;
-    width: 15rem;
-    height: 2.5rem;
-    background-color: #007ec1;
-    text-align: center;
-    font-style: italic;
-    color: white;
-    font-size: 1rem;
+    &--text {
+      border-top: 2px solid var(-color-primary);
+      max-width: 70rem;
+      text-align: center;
+    }
+
+    &--button {
+      font-family: var(--font-secondary);
+      text-decoration: none;
+      text-align: center;
+      @include font(18);
+      width: 10rem;
+      height: 2rem;
+      padding: 0.4rem 0;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 0.8rem;
+
+      &:hover {
+        text-decoration: none;
+        background-color: orange;
+      }
+    }
   }
 }
