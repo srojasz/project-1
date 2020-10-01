@@ -18,6 +18,11 @@
       box-shadow: 7px 7px 8px 5px grey;
       opacity: 0.9;
 
+      @include to-tablet() {
+        min-width: 8rem;
+        height: 11rem;
+      }
+
       &.card-up {
         opacity: 1;
       }

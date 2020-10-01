@@ -3,9 +3,18 @@ import Card from "./Card";
 import "../stylesheets/card.scss";
 import dataCards from "../data/dataCards.json";
 
-function CardList() {
+function CardList(props) {
+  const { spanishTexts, englishTexts, language } = props;
+
+  const shuffleButton =
+    language === "spanish"
+      ? spanishTexts.shuffleButton
+      : englishTexts.shuffleButton;
+
+  //Set state.
   const [cards, setCards] = useState(dataCards);
 
+  //Handle functions.
   const handleSuffle = () => {
     let i, j, temp;
     for (i = cards.length - 1; i > 0; i--) {
@@ -30,7 +39,7 @@ function CardList() {
   return (
     <div className="game">
       <button onClick={handleSuffle} className="header__button">
-        ¡A mezclar!
+        {shuffleButton}
       </button>
       <div className="game-board">
         {cards.map((card, key) => {

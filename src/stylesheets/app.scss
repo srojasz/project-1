@@ -1,5 +1,5 @@
-@import '../stylesheets/utilities/mixins.scss';
-@import '../stylesheets/utilities/typography.scss';
+@import "../stylesheets/utilities/mixins.scss";
+@import "../stylesheets/utilities/typography.scss";
 
 //RESET
 
@@ -11,4 +11,8 @@
 .app-container {
   max-width: var(--max-content-width);
   margin: 0 auto;
+
+  @include to-desktop() {
+    padding: 0 2rem;
+  }
 }
