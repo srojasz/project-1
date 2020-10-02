@@ -11,6 +11,11 @@ function CardList(props) {
       ? spanishTexts.shuffleButton
       : englishTexts.shuffleButton;
 
+  const textAlert =
+    language === "spanish"
+      ? "Ooops, todavía no puedes abrir esta carta. ¡Sigue jugando!"
+      : "Ooops, you can't open this card yet. Keep playing!";
+
   //Set state.
   const [cards, setCards] = useState(dataCards);
 
@@ -29,10 +34,33 @@ function CardList(props) {
 
   const onClick = (index) => (e) => {
     const card = cards[index];
-    cards[index] = {
-      ...card,
-      isOpen: !card.isOpen,
-    };
+    const openCards = [];
+
+    // If it is a card with no restrictions.
+    if (!card.isBlocked) {
+      cards[index] = {
+        ...card,
+        isOpen: true,
+      };
+    } else {
+      // Keep the open cards ID in an array.
+      cards.map((card) => {
+        if (card.isOpen) {
+          openCards.push(card.id);
+        }
+      });
+
+      // If rest of cards are open, change isOpen and isBlocked properties at the state.
+      if (openCards.length === cards.length - 1) {
+        cards[index] = {
+          ...card,
+          isOpen: !card.isOpen,
+          isBlocked: false,
+        };
+      } else {
+        alert(textAlert);
+      }
+    }
     setCards([...cards]);
   };
 
@@ -51,6 +79,7 @@ function CardList(props) {
               card={card.css}
               name={card.name}
               isOpen={card.isOpen}
+              isBlocked={card.isBlocked}
               onClick={onClick(key)}
             />
           );

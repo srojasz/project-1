@@ -39,6 +39,7 @@
     "name": "B O N U S",
     "icon": "Icono de bonus",
     "css": "bonus",
-    "isOpen": false
+    "isOpen": false,
+    "isBlocked": true
   }
 ]

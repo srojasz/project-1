@@ -11,7 +11,9 @@ function Footer(props) {
     language === "spanish" ? spanishTexts.fastButton : englishTexts.fastButton;
 
   const cvUrl =
-    "https://drive.google.com/file/d/1E437fkUNZA5SwoeoCGXs12KNXBVxtsLE/view";
+    language === "spanish"
+      ? "https://drive.google.com/file/d/1E437fkUNZA5SwoeoCGXs12KNXBVxtsLE/view"
+      : "https://drive.google.com/file/d/1fJmwHEkny7Uy6AvP9NihjX3d9pJmSB71/view?usp=sharing";
   return (
     <footer className="footer">
       <section className="footer__info">
