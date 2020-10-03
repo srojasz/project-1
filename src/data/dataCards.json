@@ -4,35 +4,88 @@
     "name": "Formación",
     "icon": "Icono de formación",
     "css": "education",
-    "isOpen": false
+    "isOpen": false,
+    "showDetail": false,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "skills": ["skill1", "skill2"]
+      },
+      {
+        "title": "freeCodeCamp",
+        "date": "2020-2020",
+        "skills": ["skill1", "skill2"]
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Experiencia",
     "icon": "fa-briefcase",
     "css": "experience",
-    "isOpen": false
+    "isOpen": false,
+    "showDetail": false,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "skills": ["skill1", "skill2"]
+      },
+      {
+        "title": "freeCodeCamp",
+        "date": "2020-2020",
+        "skills": ["skill1", "skill2"]
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Idiomas",
     "icon": "Icono de idiomas",
     "css": "languages",
-    "isOpen": false
+    "isOpen": false,
+    "showDetail": false,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "skills": ["skill1", "skill2"]
+      },
+      {
+        "title": "freeCodeCamp",
+        "date": "2020-2020",
+        "skills": ["skill1", "skill2"]
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Proyectos",
     "icon": "Icono de proyectos",
     "css": "projects",
-    "isOpen": false
+    "isOpen": false,
+    "showDetail": false
   },
   {
     "id": 5,
     "name": "Soft Skills",
     "icon": "Icono de soft skills",
     "css": "skills",
-    "isOpen": false
+    "isOpen": false,
+    "showDetail": false,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "skills": ["skill1", "skill2"]
+      },
+      {
+        "title": "freeCodeCamp",
+        "date": "2020-2020",
+        "skills": ["skill1", "skill2"]
+      }
+    ]
   },
   {
     "id": 6,
@@ -40,6 +93,19 @@
     "icon": "Icono de bonus",
     "css": "bonus",
     "isOpen": false,
-    "isBlocked": true
+    "showDetail": false,
+    "isBlocked": true,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "skills": ["skill1", "skill2"]
+      },
+      {
+        "title": "freeCodeCamp",
+        "date": "2020-2020",
+        "skills": ["skill1", "skill2"]
+      }
+    ]
   }
 ]

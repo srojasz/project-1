@@ -20,6 +20,8 @@ function Header(props) {
       ? spanishTexts.secondaryText
       : englishTexts.secondaryText;
 
+  const subtitleText = "Why just apply when you can also play?";
+
   return (
     <header className="header">
       <div className="header__toggle--container">
@@ -35,9 +37,7 @@ function Header(props) {
         </span>
       </div>
       <h2 className="header__title">My game vitae!</h2>
-      <h3 className="header__subtitle">
-        Why just apply when you can also play?
-      </h3>
+      <h3 className="header__subtitle">{subtitleText}</h3>
       <p className="header__text">{mainText}</p>
       <p className="header__text">{secondaryText}</p>
     </header>
