@@ -8,14 +8,16 @@
     "showDetail": false,
     "detail": [
       {
-        "title": "Adalab",
-        "date": "2019-2020",
-        "skills": ["skill1", "skill2"]
-      },
-      {
         "title": "freeCodeCamp",
         "date": "2020-2020",
-        "skills": ["skill1", "skill2"]
+        "description": "JavaScript Algorithms and Data Structures. 300h",
+        "skills": ["JS", "Algorythms", "Data"]
+      },
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "description": "Frontend Bootcamp",
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Scrum"]
       }
     ]
   },
@@ -30,12 +32,14 @@
       {
         "title": "Adalab",
         "date": "2019-2020",
-        "skills": ["skill1", "skill2"]
+        "description": "Frontend Bootcamp",
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Scrum"]
       },
       {
         "title": "freeCodeCamp",
         "date": "2020-2020",
-        "skills": ["skill1", "skill2"]
+        "description": "Frontend Bootcamp",
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Scrum"]
       }
     ]
   },
@@ -48,14 +52,16 @@
     "showDetail": false,
     "detail": [
       {
-        "title": "Adalab",
-        "date": "2019-2020",
-        "skills": ["skill1", "skill2"]
+        "title": "English",
+        "date": false,
+        "description": "C1 - Cambridge",
+        "skills": ["Living and working in London for 6 months"]
       },
       {
-        "title": "freeCodeCamp",
-        "date": "2020-2020",
-        "skills": ["skill1", "skill2"]
+        "title": "Italian",
+        "date": false,
+        "description": "C1 - CILS3 Università di Siena",
+        "skills": ["Living and working in Rome for 12 months"]
       }
     ]
   },
@@ -65,7 +71,15 @@
     "icon": "Icono de proyectos",
     "css": "projects",
     "isOpen": false,
-    "showDetail": false
+    "showDetail": false,
+    "detail": [
+      {
+        "title": "Adalab",
+        "date": "2019-2020",
+        "description": "C1 - CILS3 Università di Siena",
+        "skills": ["Living and working in Rome for 12 months"]
+      }
+    ]
   },
   {
     "id": 5,
@@ -78,12 +92,8 @@
       {
         "title": "Adalab",
         "date": "2019-2020",
-        "skills": ["skill1", "skill2"]
-      },
-      {
-        "title": "freeCodeCamp",
-        "date": "2020-2020",
-        "skills": ["skill1", "skill2"]
+        "description": "C1 - CILS3 Università di Siena",
+        "skills": ["Living and working in Rome for 12 months"]
       }
     ]
   },
@@ -99,12 +109,8 @@
       {
         "title": "Adalab",
         "date": "2019-2020",
-        "skills": ["skill1", "skill2"]
-      },
-      {
-        "title": "freeCodeCamp",
-        "date": "2020-2020",
-        "skills": ["skill1", "skill2"]
+        "description": "C1 - CILS3 Università di Siena",
+        "skills": ["Living and working in Rome for 12 months"]
       }
     ]
   }

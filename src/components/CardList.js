@@ -3,9 +3,7 @@ import Card from "./Card";
 import "../stylesheets/card.scss";
 import dataCards from "../data/dataCards.json";
 
-function CardList(props) {
-  const { spanishTexts, englishTexts, language } = props;
-
+function CardList({ spanishTexts, englishTexts, language }) {
   const shuffleButton =
     language === "spanish"
       ? spanishTexts.shuffleButton
@@ -32,7 +30,7 @@ function CardList(props) {
     setCards(shuffleCards);
   };
 
-  const onClick = (index) => (e) => {
+  const onClick = (index) => () => {
     const card = cards[index];
     const openCards = [];
 
@@ -64,6 +62,13 @@ function CardList(props) {
     setCards([...cards]);
   };
 
+  const handleClose = (index) => {
+    const card = cards[index];
+    cards[index] = {
+      ...card,
+      isOpen: false,
+    };
+  };
   return (
     <div className="game">
       <button onClick={handleSuffle} className="header__button">
@@ -80,7 +85,9 @@ function CardList(props) {
               name={card.name}
               isOpen={card.isOpen}
               isBlocked={card.isBlocked}
+              details={card.detail}
               onClick={onClick(key)}
+              handleClose={handleClose(key)}
             />
           );
         })}

@@ -1,15 +1,13 @@
 import React from "react";
 import "../stylesheets/header.scss";
 
-function Header(props) {
-  const {
-    handleToggleClass,
-    activeClass,
-    language,
-    spanishTexts,
-    englishTexts,
-  } = props;
-
+function Header({
+  handleToggleClass,
+  activeClass,
+  language,
+  spanishTexts,
+  englishTexts,
+}) {
   const mainText =
     language === "spanish"
       ? spanishTexts.starterText

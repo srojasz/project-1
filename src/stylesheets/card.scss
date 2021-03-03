@@ -5,6 +5,7 @@
   @include flex($dir: column, $ali: center);
 
   &-board {
+    position: relative;
     @include flex($ali: center, $jus: center, $wrap: wrap);
     margin-bottom: 1.5rem;
 
@@ -24,6 +25,13 @@
       }
 
       &.card-up {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 3;
+        width: 80vw;
+        height: 90vh;
         opacity: 1;
       }
 
@@ -38,6 +46,10 @@
       &--icon {
         color: white;
         text-align: center;
+      }
+
+      &--detail {
+        padding: 20px;
       }
 
       &.education {
